@@ -31,12 +31,46 @@ Leibniz-Zentrum für Archäologie - LEIZA
 <!--UTILITY-->
 <script type="text/javascript" src="js/init.js"></script>
 <script type="text/javascript" src="js/init_added.js"></script>
+<!-- style -->
+<style>
+	@import url(https://fonts.bunny.net/css?family=libre-franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+	body {
+		font-family: 'Libre Franklin', sans-serif;
+	}
+	.output-box2 {
+		position: absolute;
+		border-radius: 5px;
+		margin: 0;
+		height: auto;
+		padding: 5px 5px 5px 5px;
+		cursor: default;
+		background-color: rgba(233, 231, 191, 0.5);
+		color: #111111;
+		text-decoration: none;
+		text-align: center;
+		font-style: italic;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 20px;
+		-webkit-user-select: none;
+		-webkit-touch-callout: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		touch-action: none;
+		-ms-touch-action: none;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		-webkit-tap-highlight-color: transparent;
+		right: 10px; bottom: 25px;
+	}
+	</style>
 </head>
 
 <body>
 	<div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
 		<div id="tdhlg"></div>
-		<div id="title">Modell & Ausformung</div>
+		<div id="title">Moule & Gobelet - Toulon sur Allier</div>
 		<div id="toolbar">
 			<img id="help_on" title="Hide Help" src="skins/dark/help_on.png" style="position:absolute; visibility:hidden;"/>
 			<img id="help" title="Show Help" src="skins/dark//help.png"/><br/>
@@ -97,8 +131,8 @@ Leibniz-Zentrum für Archäologie - LEIZA
 				<tr><td align="center" colspan="2">switch visibility of model<hr/></td></tr>
 				<tr >
 					<td align="left">
-						<button id="data1" title="before conservation status on/off"  onclick="data1Switch(true)" style="position:absolute; visibility:hidden;" >Model</button>
-						<button id="data1_on" title="before conservation status on/off"  onclick="data1Switch(false)" style="color:#00ff00; visibility:visible;">Model</button>
+						<button id="data1" title="before conservation status on/off"  onclick="data1Switch(true)" style="position:absolute; visibility:hidden;" >Moule</button>
+						<button id="data1_on" title="before conservation status on/off"  onclick="data1Switch(false)" style="color:#00ff00; visibility:visible;">Moule</button>
 					</td>
 					<td  align="center">
 						<img id="metadata1" title="Hide Metadata" src="skins/icons_added/metadata.png" onclick="metaSwitch01(true,jsonData01,jsonfull01)" style="position:absolute; visibility:visible;"/>
@@ -107,8 +141,8 @@ Leibniz-Zentrum für Archäologie - LEIZA
 				</tr>
 				<tr>
 					<td align="left">
-						<button id="data2" title="after conservation status on/off"  onclick="data2Switch(true)" style="position:absolute; visibility:visible;" >Ausformung</button>
-						<button id="data2_on" title="after conservation status on/off"  onclick="data2Switch(false)" style="color:#00ff00; visibility:hidden;">Ausformung</button>
+						<button id="data2" title="after conservation status on/off"  onclick="data2Switch(true)" style="position:absolute; visibility:visible;" >Gobelet</button>
+						<button id="data2_on" title="after conservation status on/off"  onclick="data2Switch(false)" style="color:#00ff00; visibility:hidden;">Gobelet</button>
 					</td>
 				</td>
 				<td  align="center">
@@ -206,6 +240,10 @@ Leibniz-Zentrum für Archäologie - LEIZA
 		<div id="measure-box" class="output-box">
 			Measured length [m]<hr/>
 			<span id="measure-output" class="output-text" onmousedown="event.stopPropagation()">0.0</span>
+		</div>
+
+		<div id="feature-box" class="output-box2">
+			Anja Cramer / LEIZA, CC BY 4.0
 		</div>
 
 		<div id="sections-box" class="output-box">
