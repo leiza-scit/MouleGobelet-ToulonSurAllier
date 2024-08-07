@@ -106,8 +106,8 @@
 
 #dataset {
   position: absolute;
-  left: 100px;
-  top: 16px;
+  right: 73px;
+  bottom: 60px;
   width: auto;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -119,6 +119,7 @@
   -ms-touch-action: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+  padding: 5px 5px 5px 5px;
 }
 
 /*
@@ -148,7 +149,7 @@
 }
 
 #dataset table {
-  background-color: rgba(100, 100, 100, 0.6);
+  background-color: #4f628b;
   color: white;
   font-style: italic;
   font-size: 15px;
@@ -161,7 +162,7 @@
   font-style: italic;
   font-size: 15px;
   color: white;
-  background-color: #606060;
+  background-color: #223466;
   border-radius: 5px;
   cursor: hand;
 }
